@@ -15,5 +15,6 @@ def home(request):
             return HttpResponseRedirect(reverse('tarefas:home'))
         else:
             return render(request, 'tarefas/home.html', {'form': form}, status=400)
+         
+        return render(request, 'tarefas/home.html')
 
-    return render(request, 'tarefas/home.html')
