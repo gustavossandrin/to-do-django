@@ -34,7 +34,7 @@
                 </div>
             </form>
             {% endfor %}
-             <h2 class="mt-5">Tarefas Concluidas</h2>
+            <h2 class="mt-5">Tarefas Concluidas</h2>
             {% for tarefa in tarefas_feitas %}
             <form action="{% url 'tarefas:detalhe' tarefa_id=tarefa.id %}" method="post">
                 {% csrf_token %}
