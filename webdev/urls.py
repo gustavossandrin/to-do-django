@@ -20,6 +20,5 @@ from webdev.home_view import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
-    path('tarefas/', include('webdev.tarefas.urls')),
+    path('', include('webdev.tarefas.urls')),
 ]
